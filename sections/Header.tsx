@@ -1,5 +1,5 @@
-import icon from "./header_files/icon.png";
-import down_arrow from "./header_files/down_arrow.svg";
+import icon from "../public/header_files/icon.png";
+import down_arrow from "../public/header_files/down_arrow.svg";
 import { useContext,useEffect,useState } from "react";
 import {ContextProvider} from "../functions/Context"
 const Sections = () => {

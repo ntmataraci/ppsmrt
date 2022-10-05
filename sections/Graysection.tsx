@@ -1,4 +1,4 @@
-import camper from "./graysection_files/camper.png"
+
 const Graysection = () => {
 
 const textList=[
@@ -23,7 +23,7 @@ const cross=()=><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmln
 <div className="graysection_container">
 <div className="graysection_card">
     <div className="graysection_card_left">
-        <img src={camper.src}></img>
+        <img src="../page/camper.png"></img>
         <div className="graysection_card_left--header">Join the club</div>
         <div className="graysection_card_left--content">Subscribe and Get an Extra <b><u>25% Off</u></b> on your first purchase.</div>
         <input readOnly className="graysection_card_left--input" type="email" placeholder="Email adress"></input>
