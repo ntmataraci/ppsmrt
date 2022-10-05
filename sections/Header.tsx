@@ -1,4 +1,4 @@
-import icon from "./header_files/icon.png";
+
 import down_arrow from "./header_files/down_arrow.svg";
 import { useContext,useEffect,useState } from "react";
 import {ContextProvider} from "../functions/Context"
@@ -9,7 +9,7 @@ const deneme = useContext(ContextProvider)
     <div className="header_row">
       <div className="left_section">
         <div>
-          <img src={icon.src} width="36" height="36"/>
+          <img src="./icon.png" width="36" height="36"/>
           modals.card
         </div>
         <div>
