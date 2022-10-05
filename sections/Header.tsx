@@ -13,7 +13,7 @@ const deneme = useContext(ContextProvider)
         </div>
         <div>
           Solutions
-          <img src="/header_files/down_arrow"></img>
+          <img src="/header_files/down_arrow.svg"></img>
         </div>
         <div>Product Tour</div>
         <div>Showcase</div>
