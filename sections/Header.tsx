@@ -8,7 +8,7 @@ const deneme = useContext(ContextProvider)
     <div className="header_row">
       <div className="left_section">
         <div>
-          <img src="./icon.png" width="36" height="36"/>
+          <img src="/header_files/icon.png" width="36" height="36"/>
           modals.card
         </div>
         <div>
