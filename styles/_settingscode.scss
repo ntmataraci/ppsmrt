@@ -1,0 +1,28 @@
+.violet_checkbox{
+    @apply accent-popup_violet 
+}
+
+.settingscode_row{ 
+    @apply flex  items-center gap-2 mb-0
+}
+
+.settingscode_container{
+    @apply flex flex-col justify-between w-4/12 text-[14px];
+    input{
+        @apply border-[1px] border-solid border-[#DDDDDD] rounded-[8px]  h-[36px]; 
+    &:focus{
+            @apply border-popup_violet border-[1px] outline-none;
+        }
+    }
+}
+
+.codebox_container{
+    @apply bg-[#333333] w-[378px] h-[260px] text-[white] text-[12px] p-5 flex flex-col;
+    :first-child{
+        @apply w-full h-full
+            }
+}
+
+.codebox_note{
+    @apply text-[12px] font-["Poppins"] flex
+}

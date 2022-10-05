@@ -1,0 +1,20 @@
+.entrance_container{
+    @apply h-[910px] lg:px-[10%];
+ 
+}
+
+
+.entrance_header{
+    @apply text-[72px] max-w-[486px] font-["poppins"] font-[600] leading-[80px] tracking-[-3px] mb-[20px]
+}
+
+.entrance_second{
+    @apply text-[30px] leading-[44px] tracking-[-1.5px] font-["poppins"] font-[400] mb-[80px]
+} 
+
+.entrance_third{
+    @apply mt-[40px] flex gap-[30px] font-["poppins"] text-[13px] font-[400] opacity-80;
+    *{
+        @apply flex gap-[5px] items-center
+    }
+}

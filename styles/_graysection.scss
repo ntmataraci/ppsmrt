@@ -1,0 +1,78 @@
+.graysection_container{
+    @apply h-[630px] bg-[#666666] px-[10%] flex flex-col items-center
+}
+
+.graysection_row{
+    @apply text-[white] flex justify-between flex-wrap items-center mt-auto mb-[130px] w-full;
+    &:last-child{
+        @apply text-[32px]  font-["Poppins"] font-[600]; 
+    }
+}
+
+.graysection_header{
+    @apply text-[72px] leading-[80px] font-["Poppins"] font-[600]
+}
+
+.graysection_content{
+    @apply text-[16px] leading-[22px] font-[500] tracking-[-0.03em]
+}
+
+
+
+//card position and sizes and texts
+
+.graysection_card{
+    @apply lg:w-[800px] w-full h-[468px] rounded-[40px] bg-[white] lg:mt-[-230px] mt-[-30px] flex justify-between
+}
+
+
+//left
+.graysection_card_left{
+    @apply w-1/2 h-full flex flex-col justify-start items-center gap-4;
+    img{
+        @apply mx-auto mt-[45px]
+    }
+}
+
+.graysection_card_left--header{
+    @apply text-[40px] font-["Poppins"] font-[600] leading-[54px] text-center tracking-tight
+}
+
+.graysection_card_left--content{
+    @apply text-[18px] font-[400] font-["Poppins"] max-w-[267px] leading-[24px] tracking-tight
+}
+//email
+.graysection_card_left--input{
+    @apply text-[16px] border-solid border-2 border-[#BBBBBB] rounded-[12px] h-[48px] w-8/12 pl-3 mt-5
+}
+
+.graysection_card_left--button{
+    @apply bg-[black] text-[white] w-8/12 rounded-[12px] h-[48px] font-["Poppins"] leading-[24px] font-[600] mt-3 text-[16px]
+}
+
+//privacy
+.graysection_card_left--privacy{
+    @apply text-[#777777] text-[12px] font-[400] font-["Poppins"] w-8/12
+}
+
+//right
+.graysection_card_right{
+    @apply bg-[url("../sections/graysection_files/shoe.png")] w-1/2 h-full rounded-r-[40px] relative
+}
+
+.graysection_card_icons{
+    @apply flex py-[15px] px-[20px] rounded-[12px] text-[16px] leading-[24px] tracking-tighter font-[500] justify-center items-center absolute bg-[white] gap-3 font-["Poppins"];
+    &.one{
+      @apply  right-[-100px] top-[100px];
+    }
+    &.two{
+     @apply   right-[-150px] top-[200px];
+    }
+    &.cross{
+        @apply  right-[35px] top-[15px] rounded-full w-10 h-10 p-0 m-0 text-[14px] font-[600];
+      }
+}
+
+.graysection_right_bottomText{
+    @apply absolute bottom-[30px] left-[30px] text-[36px] text-[white] font-[600] font-["Poppins"] leading-[40px] tracking-tight
+}

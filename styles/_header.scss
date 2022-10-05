@@ -1,0 +1,29 @@
+.header_row {
+    @apply flex flex-wrap justify-between lg:my-[32px] lg:w-8/12 w-full mx-auto;
+
+    .left_section{
+        &>div:not(:first-child) { @apply cursor-pointer hover:border-b-2 hover:border-solid hover:border-[black];
+       
+        }
+
+        @apply  flex flex-wrap gap-5 items-center;
+        :first-child{
+            @apply font-bold lg:mr-[50px] flex items-center  ;
+          img{
+            @apply lg:mr-[10px]
+          }
+        }
+
+        :nth-child(2){
+            @apply flex;
+            img{
+                @apply ml-[10px] mr-[0];
+              }
+        }
+    }
+
+    .right_section{
+        @apply flex gap-5 items-center;
+    }
+
+}

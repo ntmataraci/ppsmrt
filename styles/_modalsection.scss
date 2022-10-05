@@ -1,0 +1,15 @@
+.modalsection_container{
+    @apply bg-[white] font-["Poppins"] lg:px-[10%] pt-[90px];
+    >h2{
+        @apply text-[36px] font-[600]
+    }
+    .modalsection_container_content{
+        @apply text-[16px] max-w-[460px] mt-[15px] font-[400] leading-[24px] tracking-tighter
+    }
+    h3{
+        @apply flex items-center gap-[30px] font-[600] text-[18px] mb-[20px]
+    }
+    .modalsection_container_subheadersNumber{
+        @apply rounded-full bg-[#EAEAEA] w-[36px] h-[36px] flex justify-center items-center
+    }
+}

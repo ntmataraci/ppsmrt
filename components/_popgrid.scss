@@ -1,0 +1,34 @@
+$centerMe: "flex justify-center items-center";
+
+.popupgrid_container{
+    @apply grid lg:grid-cols-4 grid-cols-3 lg:gap-[30px]
+}
+
+.popupgrid_cell{
+    @apply bg-[#F5F5F5] max-w-[276px] max-h-[200px] lg:h-[200px] min-h-[120px] rounded-[12px] border-solid border-[1px] border-[#EAEAEA]  lg:p-1 relative #{$centerMe};
+
+  >div:not(.hoverItem){
+       @apply scale-[33%] ;
+}
+&:hover .hoverItem{
+    @apply #{$centerMe};
+}
+
+.hoverItem{
+    @apply bg-[#7D4AEA99] absolute z-10 scale-[100%] h-full w-full rounded-[12px] hidden;
+
+    button{
+        @apply bg-[white] h-[50px] rounded-[12px] text-[#7D4AEA99] font-[600] p-5 #{$centerMe} ;
+    }
+}
+& .card-a3_1{
+    @apply scale-[60%] ;
+}
+}
+.pagination{
+    @apply flex gap-2 mb-5 mt-10;
+    div{
+       @apply w-[42px] h-[42px] rounded-[10px]  font-[600] text-[#777777] cursor-pointer #{$centerMe};
+    }
+}
+

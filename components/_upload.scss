@@ -1,0 +1,15 @@
+//upload
+.upload_container{
+    @apply w-[378px] h-[178px] flex items-center justify-center flex-col border-[1px] border-dashed border-[#DDDDDD] mb-[10px] 
+}
+
+.upload_logo_container{
+    @apply w-[80px] h-[80px] bg-[#7d4aea1a] rounded-[12px] flex justify-center items-center
+}
+
+.upload_row{
+    @apply flex justify-center items-center gap-2 mt-8 text-[black];
+    >div:last-child{
+        @apply text-popup_violet underline
+    }
+}

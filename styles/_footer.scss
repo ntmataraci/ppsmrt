@@ -1,0 +1,19 @@
+.footer_container{
+    @apply flex justify-center items-center flex-col font-["Poppins"] gap-8;
+    h3{
+        @apply text-[36px] font-[600];
+    }
+span{
+@apply text-[12px] text-center flex flex-col justify-center items-center
+}
+}
+
+.footer_row{
+    @apply flex flex-row justify-between w-9/12 ;
+    div{
+@apply w-[250px] flex flex-col justify-center items-center text-[14px] text-center gap-4;
+h4{
+    @apply text-[18px] font-[600]
+}
+    }
+}

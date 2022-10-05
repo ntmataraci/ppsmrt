@@ -1,0 +1,12 @@
+.faq_container{
+    @apply flex flex-col justify-center items-center mt-5;
+    h3{
+        @apply text-[36px];
+    }
+    ul{
+        @apply w-9/12;
+    }
+    li{
+        @apply text-[18px] text-[#777777] flex justify-between h-[74px] items-center border-b-[1px] border-[#EAEAEA]
+        }
+}

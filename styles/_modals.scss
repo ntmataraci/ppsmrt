@@ -1,0 +1,181 @@
+// $cardList : (
+//     (a1_1,480,446)
+//     (a1_2,480,600)
+//     (a1_3,480,549)
+//     (a1_4,480,516)
+//     (a2_1,480,283)
+//     (a2_2,480,446)
+//     (a2_3,480,288)
+//     (a2_4,740,400)
+//     (a3_1,480,752)
+//     (a3_2,740,443)
+//     (a3_3,480,584)
+//     (a3_4,550,563)
+//     (b1_1,480,466)
+//     (b1_2,740,340)
+//     (b1_3,480,226)
+//     (b1_4,480,471)
+//     (b2_1,480,482)
+//     (b2_2,480,226)
+//     );
+// 3,4285
+$cardList: (
+  (a1_1, 480, 446) (a1_2, 480, 600) (a1_3, 480, 480) (a1_4, 480, 516)
+    (a2_1, 480, 283) (a2_2, 480, 446) (a2_3, 480, 288) (a2_4, 740, 400)
+    (a3_1, 480, 752) (a3_2, 740, 443) (a3_3, 480, 584) (a3_4, 550, 563)
+    (b1_1, 480, 466) (b1_2, 740, 340) (b1_3, 480, 226) (b1_4, 480, 470)
+    (b2_1, 570, 336) (b2_2, 456, 584) (b2_3, 492, 492, "vio")
+    (b2_4, 480, 672, "vio") (b3_1, 480, 702) (b3_2, 480, 365) (b3_3, 584, 450)
+    (b3_4, 480, 687) (c1_1, 660, 130, "vio") (c1_2, 360, 584) (c1_3, 450, 160)
+    (c1_4, 450, 480) (c2_1, 570, 310) (c2_2, 600, 360) (c2_3, 584, 480)
+    (c2_4, 480, 480) (c3_1, 570, 310) (c3_2, 600, 330) (c3_3, 584, 450)
+    (c3_4, 390, 480)
+);
+
+// @mixin card_size ($width,$height){
+//    @apply w-#{$width} h-#{$height} border-2 rounded-md bg-[#FFFFFF] flex justify-center gap-[14.5px]
+// }
+
+// .card {
+//     @include card_size(80,80 )
+//     }
+
+@each $name, $width, $height, $color in $cardList {
+  .card-#{$name} {
+    @if ($color==null) {
+      $color: "bg-[white]";
+    } @else {
+      $color: "bg-popup_violet";
+    }
+    $ratio: $width/$height;
+    $large: $width;
+    $medium: $width*0.7;
+    $small: $width*0.5;
+    $hlarge:$height;
+    $hmedium:$height*0.7;
+    $hsmall:$height*0.5;
+    @apply rounded-xl flex justify-center items-center  gap-[15px] flex-col  text-center tracking-tighter w-[#{$width}px] h-[#{$height}px] shadow-[0_5px_30px_rgba(0,0,0,0.15)] relative #{$color}  ;
+    
+
+    
+    h2 {
+      @apply text-[36px] font-[600] m-0 leading-[20px];
+    }
+    
+    &.Large {
+      @apply w-[#{$large}px]  h-[#{$hlarge}px] text-[20px] gap-[25px];
+      h2 {
+        @apply text-[36px] font-[600] m-0 leading-[20px];
+      }
+    }
+
+    &.Medium {
+      @apply w-[#{$medium}px] text-[18px] gap-[20px];
+      h2 {
+        @apply text-[24px] font-[600] m-0 leading-[20px];
+      }
+    }
+    &.Small {
+      @apply w-[#{$small}px] text-[16px] gap-[15px];
+      h2 {
+        @apply text-[18px] font-[600] m-0 leading-[20px];
+      }
+    }
+    
+   
+  }
+  .content_box{
+    @apply flex justify-center items-center flex-col w-full h-full gap-5 p-5;
+    
+}
+  .button_row {
+    @apply flex flex-row flex-wrap gap-2 justify-center items-center w-[80%];
+  }
+  .button_col {
+    @apply flex flex-col gap-2 max-w-full flex-wrap  w-[80%];
+  }
+  .icon_style {
+    @apply w-full justify-center flex items-center leading-[35px];
+  }
+  .cross_icon {
+    @apply absolute right-3 top-3;
+  }
+  img {
+    @apply rounded-xl object-cover;
+  }
+  input {
+    @apply max-w-[80%] border-[1px] border-solid border-[#D2DAE3] h-[40px] p-[0.5rem] rounded-sm
+  }
+  ul{
+    @apply flex flex-col justify-center items-start text-left;
+    li>div:nth-child(2){@apply text-[14px] float-left font-light text-[#717791]};
+  }
+.transparent input{
+  @apply bg-[transparent];
+}
+}
+
+.orange{
+  @apply bg-[#F37C34] text-[white];
+  *>svg{
+    @apply fill-[white];
+  }
+}
+.black{
+  @apply bg-[black] text-[white];
+  *>svg{
+    @apply fill-[white];
+  }
+}
+.darkgray{
+  @apply bg-[#777777] text-[white];
+  *>svg{
+    @apply fill-[white];
+  }
+}
+.gray{
+  @apply bg-[#DDDDDD];
+  *>svg{
+    @apply fill-[black];
+  }
+}
+.white{
+  @apply bg-[#FFFFFF] border-[1px] border-solid border-[black];
+  *>svg{
+    @apply fill-[black];
+  }
+}
+.violet{
+  @apply bg-popup_violet text-[white];
+  *>svg{
+    @apply fill-[white];
+  }
+}
+
+.b1_1_additional{
+@apply mt-[1rem] p-0 justify-between items-center flex flex-col;
+
+}
+
+#b1_1_bottom{
+  @apply w-full brightness-[50%] p-0 flex justify-center items-end align-bottom  ;
+  
+  }
+
+.b1_3_icons{
+  @apply outline outline-2 rounded-full cursor-pointer outline-[#BBBBBB] transition-all;
+  &:hover{
+    @apply brightness-150 shadow-lg outline-4 transition-all
+  }
+}
+
+.b3_2_icons{
+  @apply outline outline-1 rounded-full cursor-pointer outline-popup_violet w-[60px] h-[60px] transition-all;
+  &:hover{
+    @apply  shadow-lg outline-4 transition-all;
+  }
+}
+
+.c1_1_additionals{
+  @apply lg:max-w-[450px];
+}

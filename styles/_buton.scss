@@ -1,0 +1,107 @@
+
+@mixin btn_size ($width,$height){
+    @apply text-xl max-w-[#{$width}px] h-[#{$height}px] rounded-md flex justify-center items-center m-auto w-[100%];
+}
+
+@mixin btn-shadow(){
+    @apply shadow-[0_5px_10px_2px_rgba(125,74,234,0.27)]
+}
+
+.btn-link_violet {
+    &.full{
+        @include btn_size(350,48);
+ 
+    }
+    &.half{
+        @include btn_size(137,46);
+    }
+
+    &.header{
+        @include btn_size(120,36);
+        @include btn-shadow();
+        @apply text-[16px] rounded-[12px];
+    }
+    &.entrance{
+        @include btn_size(170,60);
+        @include btn-shadow();
+        @apply text-[18px] rounded-[12px] font-[500] leading-[22px];
+    }
+    &.getthecode{
+        @include btn_size(184,60);
+        @include btn-shadow();
+        @apply text-[18px] 
+    }
+    &.copythecode{
+        @include btn_size(130,30);
+        @apply text-[14px] self-end justify-self-end
+    }
+    
+
+    @apply text-[white] bg-popup_violet border-[1px] border-solid border-[white] rounded-md
+}  
+
+.btn-link_white {
+    &.full{
+        @include btn_size(350,48);
+    }
+    &.half{
+        @include btn_size(137,46);
+    }
+
+    @apply text-popup_violet bg-[white] border-popup_violet border-[1px] rounded-md
+}
+
+.btn-link{
+    &.orange{
+        @apply bg-[#F37C34] text-[white] border-[1px] border-solid border-[white] rounded-md
+    }
+    &.black{
+        @apply bg-[black] text-[white] border-[1px] border-solid border-[white] rounded-md
+    }
+    &.darkgray{
+        @apply bg-[#777777] text-[white] border-[1px] border-solid border-[white] rounded-md
+    }
+    &.gray{
+        @apply bg-[#DDDDDD] border-[1px] border-solid border-[white] rounded-md
+    }
+    &.white{
+        @apply bg-[#FFFFFF] border-[1px] border-solid border-[black] rounded-md;
+    }
+    &.violet{
+        @apply bg-popup_violet text-[white] border-[1px] border-solid border-[white] rounded-md;
+    }
+    &.full{
+        @include btn_size(350,48);
+    }
+    &.half{
+        @include btn_size(137,46);
+    }
+  
+}
+
+
+
+//switch checkbox
+
+.switchButton{
+    @apply appearance-none w-[33px] h-[18px] bg-[gray] rounded-full shadow-inner;
+    &:checked{
+        @apply bg-popup_violet
+    }
+    &:checked~.switchButtonDot{
+@apply translate-x-[15px]
+    }
+}
+.switchButtonDot{
+    @apply bg-[white] rounded-full w-[12px] h-[12px] absolute top-[3px] left-[3px]
+} 
+
+.switchButton_container{
+    @apply relative flex items-center;
+}
+
+input[type="radio"]{
+    @apply  bg-[gray] text-[60rem] checked:text-popup_violet checked:text-[black];
+}
+
+//

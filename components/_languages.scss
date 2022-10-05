@@ -1,0 +1,16 @@
+.languages_container{
+    @apply h-[145px] rounded-[6px] shadow-[0_4px_10px_rgba(0,0,0,0.25)] p-[10px] mt-[1rem];
+    >:first-child{
+        @apply  h-[105px] overflow-y-auto;
+    }
+    & li{
+        @apply flex gap-[1rem] text-[12px];
+        &:first-child{
+            @apply border-b-[1px] border-[#EAEAEA]
+        }
+    }
+}
+
+.languages_bottom{
+    @apply flex justify-between border-t-[1px] border-[#EAEAEA] text-[12px] font-[600]
+}

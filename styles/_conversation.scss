@@ -1,0 +1,19 @@
+.conversation_container{
+    @apply flex justify-center flex-col items-center;
+    h3{
+        @apply text-[36px] font-[600]
+    }
+}
+
+.conversation_row{
+    @apply flex gap-5 flex-row;
+    >div{
+        @apply w-[378px] bg-[#F5F5F5] h-[267px] font-["Poppins"] leading-[20px] flex flex-col gap-5 justify-center items-center tracking-[-1%];
+        p{
+            @apply w-[237px] font-[400] text-[14px] text-center
+        }
+        h4{
+            @apply font-[600] text-[18px]
+        }
+    }
+}

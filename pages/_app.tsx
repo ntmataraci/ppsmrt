@@ -1,8 +1,13 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
+import {ContextApi} from '../functions/Context'
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ContextApi>
+  <Component {...pageProps} />
+  </ContextApi>
+  )
 }
 
 export default MyApp

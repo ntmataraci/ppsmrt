@@ -1,0 +1,53 @@
+.appearance_body{
+    @apply flex flex-wrap flex-row justify-around
+}
+
+.appearance_right_image{
+    
+    // @apply w-9/12 max-w-[300px] lg:max-w-[740px] lg:max-h-[400px]  shadow-[0_5px_30px_rgba(0,0,0,0.15)]
+}
+
+.appearance_container{
+    @apply max-w-[300px] ;
+    h3{
+        @apply text-[14px] font-[400] leading-[18px] mt-10
+    }
+}
+
+.appearance_row{
+    @apply w-[257px] h-[48px] bg-[#F5F5F5] flex items-center justify-evenly text-[#777777] text-[14px] rounded-[12px] mb-[30px];
+    div{
+        @apply cursor-pointer
+    }
+}
+
+//
+.smallboxes_container{
+    @apply grid grid-cols-3 w-[100px] h-[60px]  mb-[30px];
+}
+
+.smallboxes{
+    @apply w-[24px] h-[15px] border-solid border-[1px] border-[#DDDDDD] cursor-pointer;
+    &:nth-of-type(1){
+        @apply rounded-tl-[4px]
+    }
+    &:nth-of-type(3){
+        @apply rounded-tr-[4px]
+    }
+    &:nth-of-type(7){
+        @apply rounded-bl-[4px]
+    }
+    &:nth-of-type(9){
+        @apply rounded-br-[4px]
+    }
+}
+
+// color boxes
+.color_row{
+    @apply flex gap-3
+}
+
+.color_boxes{
+    @apply w-[42px] h-[42px] rounded-[10px] border-solid border-[1px] border-[#0000004d] 
+}
+
