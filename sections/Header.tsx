@@ -1,5 +1,4 @@
 
-import down_arrow from "./header_files/down_arrow.svg";
 import { useContext,useEffect,useState } from "react";
 import {ContextProvider} from "../functions/Context"
 const Sections = () => {
@@ -14,7 +13,7 @@ const deneme = useContext(ContextProvider)
         </div>
         <div>
           Solutions
-          <img src={down_arrow.src}></img>
+          <img src="down_arrow"></img>
         </div>
         <div>Product Tour</div>
         <div>Showcase</div>
