@@ -55,7 +55,6 @@ export const ContextApi = ({children}:any) => {
 const [dataList,setDataList]=useState<dataType>(defaultState)
 const update = (x:any) =>{
    setDataList(x)
-   console.log(value)
 }
 
 
