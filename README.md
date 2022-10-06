@@ -1,4 +1,5 @@
-readme	
+
+![resim](https://user-images.githubusercontent.com/91319943/194228682-4e4f6bf6-f55d-4509-a688-d8e12f9394ce.png)
 	
 It's practicum work for popsmart.
 Tailwind, SCSS, NextJs and Jest is used for it.
