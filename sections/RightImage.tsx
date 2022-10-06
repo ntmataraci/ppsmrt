@@ -10,7 +10,7 @@ const RightImage = () => {
     useEffect(()=>{
         
         const findModal=allPages.findIndex(item=>contextUse.shallowState.modalName==item().type.name)
-        if (findModal){
+        if (findModal>-1){
         setSelectModal(findModal)
         }
     },
