@@ -15,7 +15,7 @@ const RightImage = () => {
         }
     },
     [contextUse.newVal.modalName])
-console.log(typeof allPages[selectModal])
+console.log(selectModal)
 
     return(
         <>
