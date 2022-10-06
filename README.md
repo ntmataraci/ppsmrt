@@ -37,9 +37,11 @@ Tailwind, SCSS, NextJs and Jest is used for it.
 	also generic h2 / input / icon is generated in this folder
 	
 	
-	![resim](https://user-images.githubusercontent.com/91319943/194229477-4d2ed6e4-2eb9-4c72-8c77-23853f488c28.png)
-	![resim](https://user-images.githubusercontent.com/91319943/194229568-bd1cb783-d2e3-4fb9-ad27-7c16d6bac64d.png)
-	![resim](https://user-images.githubusercontent.com/91319943/194229601-e87cdef5-7249-4156-a8a2-aa46521407cc.png)
+![resim](https://user-images.githubusercontent.com/91319943/194229477-4d2ed6e4-2eb9-4c72-8c77-23853f488c28.png)
+
+![resim](https://user-images.githubusercontent.com/91319943/194229568-bd1cb783-d2e3-4fb9-ad27-7c16d6bac64d.png)
+
+![resim](https://user-images.githubusercontent.com/91319943/194229601-e87cdef5-7249-4156-a8a2-aa46521407cc.png)
 
 
 
