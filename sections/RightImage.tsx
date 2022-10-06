@@ -8,15 +8,18 @@ const RightImage = () => {
     const [selectModal,setSelectModal]=useState(0)
 
     useEffect(()=>{
+        
         const findModal=allPages.findIndex(item=>contextUse.shallowState.modalName==item().type.name)
+        if (findModal){
         setSelectModal(findModal)
+        }
     },
     [contextUse.newVal.modalName])
 console.log(typeof allPages[selectModal])
 
     return(
         <>
-<div className="rightImage_container">{typeof allPages[selectModal]==function&&allPages[selectModal]("changeable")}</div>
+<div className="rightImage_container">{allPages[selectModal]("changeable")}</div>
 </>
     )
     }
