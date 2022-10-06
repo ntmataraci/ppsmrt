@@ -16,7 +16,7 @@ const RightImage = () => {
 
     return(
         <>
-<div className="rightImage_container">{allPages[selectModal]("changeable")}</div>
+<div className="rightImage_container">{allPages[selectModal]}</div>
 </>
     )
     }
