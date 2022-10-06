@@ -6,16 +6,17 @@ const RightImage = () => {
 
 
     const [selectModal,setSelectModal]=useState(0)
-
-    useEffect(()=>{
-        
-        const findModal=allPages.findIndex(item=>contextUse.shallowState.modalName==item().type.name)
-        if (findModal>-1){
+    
+  useEffect(()=>{
+        const findModal=stringList.findIndex(z=>z==contextUse.shallowState.modalName)
+        // console.log(findingIndex)
+        // const findModal=allPages[findingIndex]
+        // console.log(findingIndex)
+        if(findModal>-1){
         setSelectModal(findModal)
         }
     },
     [contextUse.newVal.modalName])
-console.log(selectModal)
 
     return(
         <>
