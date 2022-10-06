@@ -12,11 +12,11 @@ const RightImage = () => {
         setSelectModal(findModal)
     },
     [contextUse.newVal.modalName])
-
+console.log(allPages[selectModal])
 
     return(
         <>
-<div className="rightImage_container">{allPages[selectModal]("changeable")}</div>
+<div className="rightImage_container">{allPages[selectModal]}</div>
 </>
     )
     }
