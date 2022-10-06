@@ -58,6 +58,6 @@ const page2: ((x: string) => any)[] = [
 const page3: ((x: string) => any)[] = [
   (x) => <C1_1 name={x} />,
 ];
-
+export const stringList=["A1_1","A1_2","A1_3","A1_4","A2_1","A2_2","A2_3","A2_4","A3_1","A3_2","A3_3","A3_4","B1_1","B1_2","B1_3","B1_4","B2_1","B2_2","B2_3","B2_4","B3_1","B3_2","B3_3","B3_4","C1_1"]
 export const pageIndex = [page1, page2, page3];
 export const allPages: any = [...page1, ...page2, ...page3];
