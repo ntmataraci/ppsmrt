@@ -17,7 +17,7 @@ const theValue= () =>{
   
 return(
     <>
-
+        {theValue&&
 <div className={`card-a1_1  ${name!="default"&&contextUse.newVal.size}`}> 
 <div className={`content_box`}>
 <div className="cross_icon" > <Modal_cross/> </div>
@@ -32,6 +32,7 @@ return(
  </div>
  </div>
 </div>
+            }
 </>
 )
 
