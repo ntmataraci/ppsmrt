@@ -1,5 +1,5 @@
 import { ReactElement, useState } from "react";
-import {  pageIndex } from "./PageList";
+import {  allPages, pageIndex, stringList } from "./PageList";
 import { useContext } from "react";
 import { ContextProvider } from "../functions/Context";
 import { defaultContent } from "../modals/defaultContent";
@@ -11,8 +11,8 @@ const PopupGrid = () => {
   const contextUse = useContext(ContextProvider);
 
   const selectModal = (item: any) => {
-    contextUse.shallowState.modalName = item.type.name;
-    const findDefault=defaultContent.find(x=>x.name==item.type.name)?.content.slice()
+    contextUse.shallowState.modalName = item;
+    const findDefault=defaultContent.find(x=>x.name==item)?.content.slice()
     const cloneDefaultState={...defaultState}
     contextUse.shallowState.content =findDefault
     contextUse.changer?.((prev:dataType) => ({
@@ -32,14 +32,16 @@ const PopupGrid = () => {
     <>
       <div className="popupgrid_container">
         {pageIndex[visited].map((item, idx) => (
+          <>
           <div key={idx} className="popupgrid_cell">
             <div className="hoverItem">
-              <button onClick={() => selectModal(item("changeable"))}>
+              <button onClick={() => selectModal(stringList[idx])}>
                 Select template
               </button>
             </div>
             <div>{item("default")}</div>
           </div>
+          </>
         ))}
       </div>
       <div className="pagination">
@@ -58,3 +60,4 @@ const PopupGrid = () => {
 };
 
 export default PopupGrid;
+
