@@ -3,6 +3,10 @@
 	
 It's practicum work for popsmart.
 Tailwind, SCSS, NextJs and Jest is used for it.
+## 11 components are missing
+## Jest Tests are missing
+## livedemo : https://ppsmrt.vercel.app/    ----- it has first render default error in vercel , I cant solve until finalcase delivery date , but I can solve deployment error at 06.10.22 23:30  :(   -----
+
 	
 **Folders** :	
 
@@ -10,10 +14,6 @@ Tailwind, SCSS, NextJs and Jest is used for it.
 
 **Sections**	Index Page's sectional parts are in this folder. Every section has a one file and some sections
 	supported with components. Sections, update and received data from context api. Control and View models combined in Its Section.
-## 11 components is missing
-## Jest Tests are missing
-## livedemo : https://ppsmrt.vercel.app/    ----- it has first render defaul error , I cant solve until finalcase delivery date -----
-
 
 **Modals**	Every modals designed in this folder. And generic css design supported with __modals.scss in style folder.
 	But some unique items is written with JSX Inline Css Codes.
