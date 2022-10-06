@@ -12,7 +12,7 @@ const RightImage = () => {
         setSelectModal(findModal)
     },
     [contextUse.newVal.modalName])
-console.log(allPages[selectModal])
+console.log(allPages[selectModal]("changeable"))
 
     return(
         <>
