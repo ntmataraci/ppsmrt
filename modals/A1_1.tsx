@@ -14,10 +14,10 @@ const theValue= () =>{
     const catchVal=name=="default"?cloneDefault:changedText
     return catchVal
 }
-  
+  console.log(theValue())
 return(
     <>
-        {theValue&&
+        {theValue()&&
 <div className={`card-a1_1  ${name!="default"&&contextUse.newVal.size}`}> 
 <div className={`content_box`}>
 <div className="cross_icon" > <Modal_cross/> </div>
