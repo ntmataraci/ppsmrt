@@ -16,7 +16,7 @@ console.log(typeof allPages[selectModal])
 
     return(
         <>
-<div className="rightImage_container">{allPages!=undefined&&allPages[selectModal]("changeable")}</div>
+<div className="rightImage_container">{allPages&&selectModal&&allPages[selectModal]("changeable")}</div>
 </>
     )
     }
