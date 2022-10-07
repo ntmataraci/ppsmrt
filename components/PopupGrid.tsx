@@ -27,7 +27,7 @@ const PopupGrid = () => {
     }));
     console.log(contextUse.newVal.color)
   };
-
+  
   return (
     <>
       <div className="popupgrid_container">
@@ -36,6 +36,7 @@ const PopupGrid = () => {
           <div key={idx} className="popupgrid_cell">
             <div className="hoverItem">
               <button onClick={() => selectModal(stringList[idx+(visited*12)]}>
+                {console.log(stringList[idx+(visited*12)]}
                 Select template
               </button>
             </div>
