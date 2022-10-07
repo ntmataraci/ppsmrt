@@ -19,7 +19,7 @@ Tailwind, SCSS, NextJs and Jest is used for it.
 	But some unique items is written with JSX Inline Css Codes.
 	Initial datas in the defaultcontent files. These files connected with PageList 
 	as Array under component and with {name} prop, it is rendered due to this prop on grid section or right side bar.
-	if it is input value, it must be writted as <input>string</input> in defaultcontent and is used with dangerouslyInnetHtml in modals. 
+	
   
 **Functions**	It has context Api for send and receive data. And it has uploadApi for upload operations
 **Components**	Some functional operations in these area.
