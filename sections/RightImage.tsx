@@ -1,6 +1,6 @@
 import { useContext, useEffect,useState } from "react";
 import { ContextProvider } from "../functions/Context";
-import { allPages } from "../components/PageList";
+import { allPages,stringList } from "../components/PageList";
 const RightImage = () => {
     const contextUse = useContext(ContextProvider);
 
