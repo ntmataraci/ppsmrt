@@ -35,7 +35,7 @@ const PopupGrid = () => {
           <>
           <div key={idx} className="popupgrid_cell">
             <div className="hoverItem">
-              <button onClick={() => selectModal(stringList[idx])}>
+              <button onClick={() => selectModal(stringList[idx*pageIndex])}>
                 Select template
               </button>
             </div>
