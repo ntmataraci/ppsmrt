@@ -28,7 +28,7 @@ Tailwind, SCSS, NextJs and Jest is used for it.
 	PageList is used for distribution grid section and sidebar section
 	Language as used controller in language menu
   
-**jsfile**	It's has native js file and builded and renamed css file. When outer codes putted in html file, this js file must be
+**jsfile (under public folder)**	It's has native js file and builded and renamed css file. When outer codes putted in html file, this js file must be
 	referened with url in hosting or another area.
 	Script run with pop() function and codes variable contains outer datas.
 	Data name must be match for calling styles names. 
